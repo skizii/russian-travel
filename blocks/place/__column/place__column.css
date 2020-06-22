@@ -1,0 +1,7 @@
+.place__column {
+    width: 50%;
+    min-width: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
