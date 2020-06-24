@@ -12,3 +12,16 @@
     margin: 0 0 80px;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 768px) {
+    .place {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .place {
+        margin-bottom: 48px;
+        justify-content: center;
+    }
+}

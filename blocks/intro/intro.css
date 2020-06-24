@@ -6,6 +6,24 @@
 
 
 .intro {
-    width: 80%;
+    width: 77%;
     margin: 0 auto 92px;
+}
+
+@media screen and (max-width: 1024px) {
+    .intro {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .intro {
+        width: 94%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .intro {
+        margin-bottom: 40px;
+    }
 }

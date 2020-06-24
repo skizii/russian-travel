@@ -4,8 +4,15 @@
 @import url('./__lang-link/_active/header__lang-link_active.css');
 
 .header {
-    width: 92%;
+    width: 93%;
     display: flex;
     justify-content: space-between;
     margin: 28px auto 56px;
+    align-items: center;
+}
+
+@media screen and (max-width: 680px) {
+    .header {
+        margin: 16px auto 40px;
+    }
 }

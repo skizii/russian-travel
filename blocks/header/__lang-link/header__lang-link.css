@@ -7,4 +7,16 @@
     color: #FFFFFF;
     margin-left: 18px;
     text-decoration: none;
+    transition: opacity ease .2s;
+}
+
+.header__lang-link:hover {
+    opacity: .8;
+}
+
+@media screen and (max-width: 680px) {
+    .header__lang-link {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
