@@ -5,12 +5,20 @@
 @import url('./__title/place__title.css');
 @import url('./__url-heading/place__url-heading.css');
 @import url('./__website/place__website.css');
+@import url('./__description/place__description.css');
 
 .place {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "title website"
+        "image description"
+        "image description";
+    row-gap: 48px;
+    column-gap: 15px;
+    align-items: end;
     margin: 0 0 80px;
-    justify-content: space-between;
 }
 
 @media screen and (max-width: 768px) {
@@ -21,7 +29,14 @@
 
 @media screen and (max-width: 680px) {
     .place {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "title"
+        "image"
+        "description";
         margin-bottom: 48px;
-        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        row-gap: 30px;
     }
 }
